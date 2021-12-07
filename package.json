@@ -1,0 +1,23 @@
+{
+  "name": "briefly",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "omrilotan <hi@omrilotan.com> (https://omrilotan.com/)",
+  "license": "Unlicense",
+  "homepage": "https://briefly.omrilotan.com/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omrilotan/briefly.git"
+  },
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node service",
+    "dev": "node service 8008",
+    "test": "http-server ./docs"
+  },
+  "dependencies": {
+    "ws": "^8.3.0"
+  }
+}

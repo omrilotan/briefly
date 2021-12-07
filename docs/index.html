@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>Briefly</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<meta name="viewport" content="width=device-width,minimum-scale=1">
+		<style>
+			body {
+				background: #eee;
+				padding: 0;
+				margin: 0;
+				font: 100 100%/1.4 -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Lucida Grande,Arial,sans-serif;
+			}
+			main {
+				display: flex;
+				height: 100%;
+				flex-direction: column;
+			}
+			main > * {
+				padding: .5em;
+			}
+			h1 {
+				font-weight: 100;
+				font-size: 1.2em;
+				margin: 0;
+			}
+			h1 b {
+				font-weight: 400;
+			}
+			div {
+				flex-grow: 1;
+				overflow: auto;
+				box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, .5);
+			}
+			p {
+				margin: 0 .5em 0 0;
+			}
+			p b {
+				display: inline-block;
+				margin-right: .25em;
+				font-weight: 400;
+			}
+			p b:after {
+				content: ":";
+			}
+			form {
+				margin: .5em 0 0 0;
+			}
+			input {
+				width: 100%;
+				font: normal 1.2em/2em monospace;
+				padding: 0 .5em;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<h1></h1>
+			<div></div>
+			<form name="message">
+				<input type="text"
+					   name="message"
+					   autofocus="">
+			</form>
+		</main>
+		<script type="module">
+import start from './index.mjs'
+start();
+		</script>
+	</body>
+</html>
